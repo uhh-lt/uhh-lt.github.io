@@ -1,6 +1,123 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+#uhhlt {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#uhhlt td, #uhhlt th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#uhhlt tr:nth-child(even){background-color: #f2f2f2;}
+
+#uhhlt tr:hover {background-color: #ddd;}
+
+#uhhlt th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*common setup code*/
+.sectionHeader {
+	font-family: gotham_mediumregular, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: #4a6b93;
+	margin-bottom: 30px;
+}
+
+.sectionHeader .header {
+	font-size: 26px;
+}
+
+span.header {
+	font-family: civita_mediumregular, serif;
+	font-size: 24px;
+	background-color: #FFF;
+	position: relative;
+	z-index: 50;
+	padding: 0 9px 0 9px;
+}
+
+.header img {
+	opacity: .45;
+}
+
+/*version 1*/
+
+hr.rule1 {
+	background-color: #FFF;
+	position: absolute;
+	z-index: 1;
+	margin-top: -19px;
+}
+
+.rule1.experience {
+	left: 26%;
+	right: 26%;
+  min-width: 250px;
+  border-top: 2px solid red;
+}
+
+
+/*version 2*/
+
+
+
+.header.ver2 {
+    font-size: 30px;
+
+}
+
+
+.header.ver2::before {
+  content: " ";
+  display:block;
+  position:absolute;
+  width:30em;
+  left:50%;
+  top:50%;
+  -webkit-transform: translateX(-50%);
+  z-index: -1;
+  margin-top:0;
+  border-top: 1px solid green;
+}
+
+</style>
+</head>
 <body>
-<h1>Welcome to the LT Lab, University of Hamburg Github repository page</h1>
+  <div class="sectionHeader">
+  			<span class="header">
+  <em>Welcome to the LT Lab Github organization page</em>
+  			</span>
+</div>
+
+<div class="sectionHeader">
+      <span class="header ver2">
+<em>The followings are the list of Projects with their respective Github Pages.</em>
+      </span>
+</div>
+
+<table id="uhhlt">
+  <tr>
+    <th>Par4Sem</th>
+    <th>Adaptive Paraphrasing for Semantic-aware Writing Aid Tools</th>
+    <th>https://uhh-lt.github.io/par4sem/</th>
+  </tr>
+  <tr>
+    <td>newsleak</td>
+    <td>Science and Data-Driven Journalism: Data Extraction and Interactive Visualization of Unexplored Textual Datasets for Investigative Data-Driven Journalism</td>
+    <td>https://uhh-lt.github.io/newsleak/</td>
+  </tr>
+</table>
+
 </body>
 </html>
